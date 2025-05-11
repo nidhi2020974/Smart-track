@@ -2,7 +2,7 @@ import face_recognition
 import cv2
 
 # Load an image from file
-image = face_recognition.load_image_file("likk.jpg")
+image = face_recognition.load_image_file("gauth.jpg")
 
 # Find all face locations in the image
 face_locations = face_recognition.face_locations(image)
@@ -10,7 +10,7 @@ face_locations = face_recognition.face_locations(image)
 print(f"Found {len(face_locations)} face(s) in this photograph.")
 
 # Show the image using OpenCV with the faces highlighted
-image_cv = cv2.imread("likk.jpg")
+image_cv = cv2.imread("gauth.jpg")
 
 # Draw rectangles around each face
 for top, right, bottom, left in face_locations:
